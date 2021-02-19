@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #90e0ef;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
   color: white;
   font-family: "Times New Roman", Times, serif;
   min-height: 100vh;
@@ -18,7 +18,16 @@ header {
   align-items: center;
   flex-direction: column;
   min-height: 15vh;
-  background-color: #1d3557;
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  /*
+  background-image: linear-gradient(
+    to right,
+    #eea2a2 0%,
+    #bbc1bf 19%,
+    #57c6e1 42%,
+    #b49fda 79%,
+    #7ac5d8 100%
+  );/*/
 }
 
 form {
@@ -40,4 +49,27 @@ form button {
   width: 3rem;
   border: none;
   background-color: white;
+}
+
+footer {
+  min-height: 13vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 100vw;
+  bottom: 0%;
+}
+
+#footer-text1,
+#footer-text2,
+#footer-text3 {
+  color: white;
+  padding: 3vh;
+}
+
+#showtext1 {
+  display: none;
 }
